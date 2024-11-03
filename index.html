@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
+    <style> /*adding styling to center images, have gaps between images and to adjust fonts and colors*/
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 1;
+            padding: 10px;
+            background-color: azure;
+        }
+
+        #product-container{
+        list-style: none;
+        display:flex;
+        gap: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        .product-details{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .product-image{
+            width:100px;
+            height:auto;
+            max-height: 75px;
+            object-fit: contain;
+            margin: 10px ;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,7 +41,7 @@
     </header>
     <main>
         <ul id="product-container"></ul>
-        <div id="error-message"></div>
+        <div id="error-message"></div> 
     </main>
     <script src="main.js"></script>
 </body>
